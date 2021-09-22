@@ -26,7 +26,7 @@ final class FeedViewModel {
 		onLoadingStateChange?(true)
 		feedLoader.load { [weak self] result in
 			switch result {
-			case .success(let feed):
+			case let .success(feed):
 				self?.onFeedLoad?(feed)
 			case .failure:
 				self?.onFeedLoadError?(Localized.Feed.loadError)
