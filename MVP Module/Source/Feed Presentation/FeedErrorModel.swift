@@ -7,5 +7,5 @@
 //
 
 struct FeedErrorModel {
-	let message: String
+	let message: String?
 }
